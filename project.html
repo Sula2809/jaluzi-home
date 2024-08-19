@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+        />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Jaluzi-home</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+            tailwind.config = {
+                theme: {
+                    extend: {
+                        colors: {
+                            clifford: '#da373d',
+                            secondary: '#F5ECED',
+                            primary: {
+                                DEFAULT: '#1D2E49',
+                                foreground: '#6582AE',
+                            },
+                        },
+                        fontSize: {
+                            c1: ['10px', '12px'],
+                            body4: ['13px', '15.6px'],
+                            body3: ['16px', '19.2px'],
+                            body2: ['20px', '24px'],
+                            body1: ['25px', '30px'],
+                            h4: ['31px', '37.2px'],
+                            h3: ['39px', '46.8px'],
+                            h2: ['49px', '58.8px'],
+                            h1: ['61px', '73.2px'],
+                        },
+                    },
+                    container: {
+                        center: true,
+                        padding: {
+                            DEFAULT: '1rem',
+                            sm: '2rem',
+                            lg: '4rem',
+                            xl: '5rem',
+                            '2xl': '6rem',
+                        },
+                        screens: {
+                            '16px': '1536px',
+                        },
+                    },
+                },
+            }
+        </script>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet"
+        />
+        <style>
+            #image-modal {
+                transform: scale(1.3);
+                display: none;
+            }
+        </style>
+    </head>
+    <body class="bg-secondary text-primary">
+        <header class="space-y-6">
+            <div class="flex justify-between items-center container py-5">
+                <div>
+                    <a href="#" class="flex items-center gap-[10px]">
+                        <img
+                            src="/assets/images/icons/location-pin.svg"
+                            alt=""
+                        />
+                        <span class="text-primary-foreground text-body2"
+                            >Бишкек, Кыргызстан</span
+                        >
+                    </a>
+                </div>
+                <div>
+                    <img src="/assets/images/icons/jaluzi-home.svg" alt="" />
+                </div>
+                <div class="flex items-center gap-[10px]">
+                    <a href="#">
+                        <img
+                            src="/assets/images/icons/WhatsApp.svg 1.svg"
+                            alt=""
+                        />
+                    </a>
+                    <a href="#" class="flex items-center gap-[10px]"
+                        ><img src="/assets/images/icons/phone.svg" alt="" />
+                        <span class="text-primary-foreground text-body2"
+                            >+996775982180</span
+                        ></a
+                    >
+                </div>
+            </div>
+            <div class="bg-primary">
+                <div
+                    class="container flex justify-center items-center gap-5 py-4"
+                >
+                    <span
+                        class="text-secondary uppercase text-body1 font-normal"
+                        >Жалюзи</span
+                    >
+                    <span
+                        class="size-3 rounded-full bg-secondary text-body1"
+                    ></span>
+                    <span
+                        class="text-secondary uppercase text-body1 font-normal"
+                        >Ролл-шторы</span
+                    >
+                </div>
+            </div>
+        </header>
+        <main class="mx-auto space-y-16">
+            <section class="relative">
+                <img
+                    src="/assets/images/image1.png"
+                    alt="main image"
+                    class="size-full"
+                />
+                <div
+                    class="absolute size-full top-0 left-0 bg-secondary opacity-50"
+                ></div>
+                <div class="absolute top-40 left-32 container">
+                    <p class="text-h2 font-extrabold max-w-[1012px] p-2.5">
+                        БОЛЕЕ 15 ЛЕТ МЫ ДОБРОСОВЕСТНО И КАЧЕСТВЕННО ОКАЗЫВАЕМ
+                        УСЛУГИ ЗАКАЗЧИКАМ
+                    </p>
+                    <button
+                        class="text-body2 font-extrabold bg-primary-foreground text-secondary rounded py-4 px-16 hover:text-primary hover:bg-secondary duration-300"
+                    >
+                        Позвонить
+                    </button>
+                </div>
+            </section>
+            <section class="container">
+                <div
+                    class="bg-white pb-16 pt-10 px-24 space-y-11 max-w-[1474px] -mt-40 rounded"
+                >
+                    <h1 class="text-h3 flex justify-center">
+                        Категории продуктов
+                    </h1>
+                    <div class="grid grid-cols-3 gap-8">
+                        <div class="space-y-2">
+                            <div class="relative group">
+                                <img
+                                    src="/assets/images/category-image1.png"
+                                    alt="image1"
+                                    class="max-w-[423px] max-h-[400px] rounded size-full transition-transform"
+                                />
+                                <div
+                                    class="absolute top-0 left-0 bg-secondary opacity-0 hover:opacity-50 duration-300 cursor-pointer size-full flex justify-center items-center"
+                                    onclick="showImageInModal(this)"
+                                >
+                                    <span class="text-primary"
+                                        >Нажмите для просмотра</span
+                                    >
+                                </div>
+                            </div>
+                            <h5 class="text-body2">Жалюзи</h5>
+                            <h3 class="text-body1 font-extrabold">
+                                Алюминевые
+                            </h3>
+                        </div>
+
+                        <div class="space-y-2">
+                            <div class="relative group">
+                                <img
+                                    src="/assets/images/category-image2.png"
+                                    alt="image2"
+                                    class="max-w-[423px] max-h-[400px] rounded size-full transition-transform"
+                                />
+                                <div
+                                    class="absolute top-0 left-0 bg-secondary opacity-0 hover:opacity-50 duration-300 cursor-pointer size-full flex justify-center items-center"
+                                    onclick="showImageInModal(this)"
+                                >
+                                    <span class="text-primary"
+                                        >Нажмите для просмотра</span
+                                    >
+                                </div>
+                            </div>
+                            <h5 class="text-body2">Жалюзи</h5>
+                            <h3 class="text-body1 font-extrabold">
+                                Вертикальные
+                            </h3>
+                        </div>
+
+                        <div class="space-y-2">
+                            <div class="relative group">
+                                <img
+                                    src="/assets/images/category-image3.png"
+                                    alt="image3"
+                                    class="max-w-[423px] max-h-[400px] rounded size-full transition-transform"
+                                />
+                                <div
+                                    class="absolute top-0 left-0 bg-secondary opacity-0 hover:opacity-50 duration-300 cursor-pointer size-full flex justify-center items-center"
+                                    onclick="showImageInModal(this)"
+                                >
+                                    <span class="text-primary"
+                                        >Нажмите для просмотра</span
+                                    >
+                                </div>
+                            </div>
+                            <h5 class="text-body2">Жалюзи</h5>
+                            <h3 class="text-body1 font-extrabold">День-Ночь</h3>
+                        </div>
+
+                        <div class="space-y-2">
+                            <div class="relative group">
+                                <img
+                                    src="/assets/images/category-image4.png"
+                                    alt="image4"
+                                    class="max-w-[423px] max-h-[400px] rounded size-full transition-transform"
+                                />
+                                <div
+                                    class="absolute top-0 left-0 bg-secondary opacity-0 hover:opacity-50 duration-300 cursor-pointer size-full flex justify-center items-center"
+                                    onclick="showImageInModal(this)"
+                                >
+                                    <span class="text-primary"
+                                        >Нажмите для просмотра</span
+                                    >
+                                </div>
+                            </div>
+                            <h5 class="text-body2">Ролл-шторы</h5>
+                            <h3 class="text-body1 font-extrabold">Рулонные</h3>
+                        </div>
+
+                        <div class="space-y-2">
+                            <div class="relative group">
+                                <img
+                                    src="/assets/images/category-image5.png"
+                                    alt="image5"
+                                    class="max-w-[423px] max-h-[400px] rounded size-full transition-transform"
+                                />
+                                <div
+                                    class="absolute top-0 left-0 bg-secondary opacity-0 hover:opacity-50 duration-300 cursor-pointer size-full flex justify-center items-center"
+                                    onclick="showImageInModal(this)"
+                                >
+                                    <span class="text-primary"
+                                        >Нажмите для просмотра</span
+                                    >
+                                </div>
+                            </div>
+                            <h5 class="text-body2">Ролл-шторы</h5>
+                            <h3 class="text-body1 font-extrabold">Касетные</h3>
+                        </div>
+
+                        <div class="space-y-2">
+                            <div class="relative group">
+                                <img
+                                    src="/assets/images/category-image6.png"
+                                    alt="image6"
+                                    class="max-w-[423px] max-h-[400px] rounded size-full transition-transform"
+                                />
+                                <div
+                                    class="absolute top-0 left-0 bg-secondary opacity-0 hover:opacity-50 duration-300 cursor-pointer size-full flex justify-center items-center"
+                                    onclick="showImageInModal(this)"
+                                >
+                                    <span class="text-primary"
+                                        >Нажмите для просмотра</span
+                                    >
+                                </div>
+                                <div
+                                    id="image-modal"
+                                    class="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 hidden"
+                                >
+                                    <div class="relative">
+                                        <button
+                                            onclick="closeModal()"
+                                            class="absolute top-2 right-2 text-white text-3xl"
+                                        >
+                                            &times;
+                                        </button>
+                                        <img
+                                            id="modal-image"
+                                            src=""
+                                            alt="zoomed image"
+                                            class="max-w-[90vw] max-h-[90vh] rounded"
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+                            <h5 class="text-body2">Ролл-шторы</h5>
+                            <h3 class="text-body1 font-extrabold">Римские</h3>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="container">
+                <div class="bg-white max-w-[1475px] rounded p-12 space-y-12">
+                    <h1 class="text-h3 text-center">Причины выбрать нас</h1>
+                    <div class="flex justify-between gap-16">
+                        <div class="w-2/5 relative">
+                            <img
+                                src="/assets/images/select-us.png"
+                                alt=""
+                                class="size-full"
+                            />
+                            <div
+                                class="absolute top-0 left-0 bg-secondary opacity-0 hover:opacity-50 duration-300 cursor-pointer size-full flex justify-center items-center"
+                                onclick="showImageInModal(this)"
+                            >
+                                <span class="text-primary"
+                                    >Нажмите для просмотра</span
+                                >
+                            </div>
+                        </div>
+                        <div
+                            class="grid grid-cols-2 justify-between gap-x-40 mt-10"
+                        >
+                            <div class="max-w-[326px] space-y-5">
+                                <div>
+                                    <img
+                                        src="/assets/images/icons/pen-ruler.svg"
+                                        alt=""
+                                    />
+                                </div>
+                                <p class="text-body1">
+                                    Бесплатный выезд дизайнера-замерщика c
+                                    подбором из каталога.
+                                </p>
+                            </div>
+                            <div class="max-w-[326px] space-y-5">
+                                <div>
+                                    <img
+                                        src="/assets/images/icons/pen-ruler.svg"
+                                        alt=""
+                                    />
+                                </div>
+                                <p class="text-body1">
+                                    Изготовление по индивидуальным размерам.
+                                </p>
+                            </div>
+                            <div class="max-w-[326px] space-y-5">
+                                <div>
+                                    <img
+                                        src="/assets/images/icons/pen-ruler.svg"
+                                        alt=""
+                                    />
+                                </div>
+                                <p class="text-body1">
+                                    Профессиональный монтаж, включая
+                                    нестандартные конструкции.
+                                </p>
+                            </div>
+                            <div class="max-w-[326px] space-y-5">
+                                <div>
+                                    <img
+                                        src="/assets/images/icons/pen-ruler.svg"
+                                        alt=""
+                                    />
+                                </div>
+                                <p class="text-body1">
+                                    Гарантия отличного решения для вашего
+                                    пространства.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="container">
+                <div class="bg-white max-w-[1475px] rounded p-12 space-y-12">
+                    <h1 class="text-h3 text-center">
+                        Наши самые популярные товары
+                    </h1>
+                    <div class="flex justify-between gap-16">
+                        <div class="w-2/5 relative">
+                            <img
+                                src="/assets/images/popular-product.png"
+                                alt=""
+                                class="size-full"
+                            />
+                            <div
+                                class="absolute top-0 left-0 bg-secondary opacity-0 hover:opacity-50 duration-300 cursor-pointer size-full flex justify-center items-center"
+                                onclick="showImageInModal(this)"
+                            >
+                                <span class="text-primary"
+                                    >Нажмите для просмотра</span
+                                >
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-7 w-3/5">
+                            <h3 class="text-body1">
+                                <strong class="text-primary-foreground"
+                                    >Рулонные шторы</strong
+                                >
+                                - идеальный выбор для поклонников минимализма.
+                            </h3>
+                            <p class="text-body1">
+                                Их легко устанавливать на створки окон,
+                                обеспечивая отличную защиту от солнца, при этом
+                                незаметные. Эти стильные шторы могут быть
+                                установлены дополнительно к тканевым шторам.
+                            </p>
+                            <p class="text-body1">
+                                Закажите свои шторы прямо сейчас!
+                            </p>
+                            <button
+                                class="bg-primary-foreground max-w-[268px] mt-auto py-3 px-16 text-secondary text-h4 rounded hover:bg-primary duration-300"
+                            >
+                                Заказать
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="container">
+                <div class="bg-white max-w-[1475px] rounded p-12 space-y-12">
+                    <h1 class="text-h3 text-center uppercase">РОЛЛ-ШТОРЫ</h1>
+                    <div class="flex justify-between gap-16">
+                        <div class="w-2/5 relative">
+                            <img
+                                src="/assets/images/roll-shtory.png"
+                                alt=""
+                                class="size-full"
+                            />
+                            <div
+                                class="absolute top-0 left-0 bg-secondary opacity-0 hover:opacity-50 duration-300 cursor-pointer size-full flex justify-center items-center"
+                                onclick="showImageInModal(this)"
+                            >
+                                <span class="text-primary"
+                                    >Нажмите для просмотра</span
+                                >
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-7 w-3/5">
+                            <h3 class="text-body1">
+                                Однотонные ролл-шторы - идеальный выбор для
+                                поклонников минимализма.
+                            </h3>
+                            <p class="text-body1">
+                                Их легко устанавливать на створки окон,
+                                обеспечивая отличную защиту от солнца, при этом
+                                незаметные. Эти стильные шторы могут быть
+                                установлены дополнительно к тканевым шторам.
+                            </p>
+                            <p class="text-body1">
+                                Закажите свои шторы прямо сейчас!
+                            </p>
+                            <button
+                                class="bg-primary-foreground max-w-[268px] mt-auto py-3 px-16 text-secondary text-h4 rounded hover:bg-primary duration-300"
+                            >
+                                Заказать
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="container">
+                <div class="relative max-w-[1475px]">
+                    <img
+                        src="/assets/images/office.png"
+                        alt="office2"
+                        class="size-full"
+                    />
+                    <p
+                        class="text-body1 font-extrabold absolute top-[50%] left-[50%] -translate-y-[50%] -translate-x-[50%] mx-auto max-w-[1298px] w-full bg-secondary p-1 rounded"
+                    >
+                        Офис - это место, где все должно быть продумано и
+                        оформлено в сдержанном стиле. Отличным и практичным
+                        решением станут жалюзи на большие пластиковые окна в
+                        офис.
+                    </p>
+
+                    <img
+                        src="/assets/images/icons/main-logo2.svg"
+                        alt="main-logo2"
+                        class="absolute right-[4%] bottom-[8%]"
+                    />
+                </div>
+            </section>
+            <section class="container">
+                <div class="bg-white max-w-[1475px] rounded p-12 space-y-12">
+                    <h1 class="text-h3 text-center uppercase">ДЕНЬ - НОЧЬ</h1>
+                    <div class="flex justify-between gap-16">
+                        <div class="w-2/5 relative">
+                            <img
+                                src="/assets/images/day-night.png"
+                                alt=""
+                                class="size-full"
+                            />
+                            <div
+                                class="absolute top-0 left-0 bg-secondary opacity-0 hover:opacity-50 duration-300 cursor-pointer size-full flex justify-center items-center"
+                                onclick="showImageInModal(this)"
+                            >
+                                <span class="text-primary"
+                                    >Нажмите для просмотра</span
+                                >
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-7 w-3/5">
+                            <h3 class="text-body1">
+                                Идеальное сочетание стиля и <br />
+                                функциональности: Шторы
+                                <strong class="text-primary-foreground"
+                                    >ДЕНЬ-НОЧЬ</strong
+                                >
+                                для вашего уюта!
+                            </h3>
+                            <p class="text-body1">
+                                Превратите свои окна в произведение искусства c
+                                инновационными шторами ДЕНЬ-НОЧЬ. <br />
+                                Эти элегантные полоски не только подчеркнут
+                                <br />
+                                Ваш интерьер, но и обеспечат уникальное
+                                сочетание уюта и практичности..
+                            </p>
+                            <p class="text-body1">Закажите шторы ДЕНЬ-НОЧЬ.</p>
+                            <button
+                                class="bg-primary-foreground max-w-[268px] mt-auto py-3 px-16 text-secondary text-h4 rounded hover:bg-primary duration-300"
+                            >
+                                Заказать
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="container">
+                <div class="relative max-w-[1475px]">
+                    <img
+                        src="/assets/images/office2.png"
+                        alt="office2"
+                        class="size-full"
+                    />
+                    <div class="absolute bottom-[6%] left-[3%] space-y-5 p-2.5">
+                        <p
+                            class="bg-secondary rounded text-h3 inline-block max-w-[488px]"
+                        >
+                            Вертикальные жалюзи
+                        </p>
+                        <p class="bg-secondary rounded text-h4 max-w-[740px]">
+                            Удобные и стильные вертикальные жалюзи.
+                        </p>
+                        <p class="bg-secondary rounded text-h4">
+                            Привнесите свежесть в ваш интерьер c легкостью
+                            управления светом.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section class="container">
+                <div class="bg-white max-w-[1475px] rounded p-12 space-y-12">
+                    <h1 class="text-h3 text-center uppercase">
+                        Жалюзи и ролл-шторы c принтами
+                    </h1>
+                    <div class="flex justify-between gap-16">
+                        <div class="w-2/5 relative">
+                            <img
+                                src="/assets/images/print-shtory.png"
+                                alt=""
+                                class="size-full"
+                            />
+                            <div
+                                class="absolute top-0 left-0 bg-secondary opacity-0 hover:opacity-50 duration-300 cursor-pointer size-full flex justify-center items-center"
+                                onclick="showImageInModal(this)"
+                            >
+                                <span class="text-primary"
+                                    >Нажмите для просмотра</span
+                                >
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-7 w-3/5">
+                            <h3 class="text-body1">
+                                Обратите внимание на наши уникальные ролл-шторы
+                                и <br />
+                                жалюзи, не только в однотонных оттенках, но и c
+                                <br />
+                                разнообразными захватывающими принтами!!!
+                            </h3>
+                            <p class="text-body1">
+                                Приглашаем Bac, в наш салон, что бы увидеть весь
+                                ассортимент. <br />
+                                Либо, Вы можете пригласить нашего дизайнера,
+                                который профессионально поможет Вам подобрать
+                                стиль и сделать точный замер желаемого изделия.
+                            </p>
+                            <button
+                                class="bg-primary-foreground max-w-[268px] mt-auto py-3 px-16 text-secondary text-h4 rounded hover:bg-primary duration-300"
+                            >
+                                Заказать
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="bg-primary py-20 flex text-secondary">
+            <div class="container flex justify-between flex-wrap">
+                <div>
+                    <img
+                        src="/assets/images/icons/main-logo3.svg"
+                        alt="light logo"
+                    />
+                </div>
+                <div>
+                    <ul class="space-y-6">
+                        <li class="text-body1">Категории продуктов</li>
+                        <li class="text-body1">Причины выбрать нас</li>
+                        <li class="text-body1">Популярные товары</li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="space-y-6">
+                        <li class="text-body1">День - ночь</li>
+                        <li class="text-body1">Рулонные</li>
+                        <li class="text-body1">Вертикальные</li>
+                        <li class="text-body1">C принтами</li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="space-y-6">
+                        <li>
+                            <a href="#" class="flex items-center gap-5"
+                                ><img
+                                    src="/assets/images/icons/light-phone.svg"
+                                    alt=""
+                                />
+                                <span class="text-body2">+996775982180</span></a
+                            >
+                        </li>
+                        <li>
+                            <a href="#" class="flex items-center gap-5"
+                                ><img
+                                    src="/assets/images/icons/WhatsApp.svg 1.svg"
+                                    alt=""
+                                />
+                                <span class="text-body2">+996775982180</span></a
+                            >
+                        </li>
+                        <li>
+                            <a href="#" class="flex items-center gap-5"
+                                ><img
+                                    src="/assets/images/icons/instagram.svg"
+                                    alt=""
+                                />
+                                <span class="text-body2">
+                                    jaluzi_home_bishkek
+                                </span></a
+                            >
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        <script>
+            function showImageInModal(element) {
+                const imgSrc = element.previousElementSibling.src // Получаем ссылку на изображение
+                const modal = document.getElementById('image-modal')
+                const modalImage = document.getElementById('modal-image')
+
+                modalImage.src = imgSrc // Устанавливаем изображение в модальном окне
+                modal.style.display = 'flex' // Показываем модальное окно
+            }
+
+            function closeModal() {
+                const modal = document.getElementById('image-modal')
+                modal.style.display = 'none' // Скрываем модальное окно
+            }
+        </script>
+    </body>
+</html>
