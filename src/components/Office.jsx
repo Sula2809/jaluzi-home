@@ -4,8 +4,6 @@ const Office = () => {
   return (
       <section
           className="container"
-          data-aos="fade-up"
-          data-aos-duration="2000"
       >
           <div className="relative max-w-[1475px]">
               <img src="/images/office.png" alt="Офис" className="size-full" />

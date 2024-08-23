@@ -9,14 +9,10 @@ import Office from './components/Office.jsx'
 import DayNight from './components/DayNight.jsx'
 import Vertical from './components/Vertical.jsx'
 import JaluziPrint from './components/JaluziPrint.jsx'
-import Aos from 'aos'
-import 'aos/dist/aos.css'
-import { useEffect } from 'react'
+
 
 function App() {
-    useEffect(()=>{
-        Aos.init()
-    })
+
     return (
         <>
             <Header />

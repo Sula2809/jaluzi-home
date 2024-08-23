@@ -4,8 +4,6 @@ const CallUs = () => {
     return (
         <section
             className="relative"
-            data-aos="fade-up"
-            data-aos-duration="2000"
         >
             <img
                 src="/images/image1.png"

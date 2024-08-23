@@ -24,8 +24,6 @@ const DayNight = () => {
     return (
         <section
             className="container"
-            data-aos="fade-up"
-            data-aos-duration="2000"
         >
             <div className="bg-white max-w-[1475px] rounded p-12 space-y-12">
                 <h1 className="text-h3 text-center uppercase">ДЕНЬ - НОЧЬ</h1>

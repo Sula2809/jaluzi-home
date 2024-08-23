@@ -4,10 +4,8 @@ const ChooseUsReasons = () => {
   return (
       <section
           className="container"
-          data-aos="fade-up"
-          data-aos-duration="2000"
       >
-          <div className="bg-white max-w-[1475px] rounded p-12 space-y-12">
+          <div className="bg-white max-w-[1475px] rounded p-12 space-y-12 mt-16">
               <h1 className="text-h3 text-center">Причины выбрать нас</h1>
               <div className="flex justify-between gap-16">
                   <div className="w-2/5 relative">
