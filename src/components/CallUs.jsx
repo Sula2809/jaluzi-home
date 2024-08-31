@@ -8,11 +8,11 @@ const CallUs = () => {
             <img
                 src="/images/image1.png"
                 alt="main image"
-                className="size-full"
+                className="size-full object-center"
             />
             <div className="absolute size-full top-0 left-0 bg-secondary opacity-50"></div>
-            <div className="absolute top-[20%] left-[6%] container space-y-10">
-                <p className="text-body-3 md:text-h2 font-extrabold max-w-[1012px] p-2.5">
+            <div className="absolute top-[20%] left-[6%] container space-y-2 lg:space-y-10">
+                <p className="text-body-3 md:text-h2 font-extrabold max-w-[330px] sm:max-w-[500px] md:max-w-[800px] lg:max-w-[1012px] p-2.5">
                     БОЛЕЕ 15 ЛЕТ МЫ ДОБРОСОВЕСТНО И КАЧЕСТВЕННО ОКАЗЫВАЕМ УСЛУГИ
                     ЗАКАЗЧИКАМ
                 </p>

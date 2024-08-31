@@ -19,13 +19,13 @@ const RollShtory = () => {
             setIsModalOpen(false)
         }
     return (
-        <section
-            className="container"
-        >
-            <div className="bg-white max-w-[1475px] rounded p-12 space-y-12">
-                <h1 className="text-h3 text-center uppercase">РОЛЛ-ШТОРЫ</h1>
-                <div className="flex justify-between gap-16">
-                    <div className="w-2/5 relative">
+        <section className="container p-0">
+            <div className="bg-white max-w-[1475px] rounded p-3 sm:p-6 md:p-9 lg:p-12 space-y-5 md:space-y-12">
+                <h1 className="lg:text-h3 md:text-h4 sm:text-body1 text-body2 text-center uppercase">
+                    РОЛЛ-ШТОРЫ
+                </h1>
+                <div className="flex flex-col md:flex-row justify-between gap-4 sm:gap-7 md:gap-10 lg:gap-16">
+                    <div className="w-full md:w-2/5 relative">
                         <img
                             src="/images/roll-shtory.png"
                             alt="Ролл-шторы"
@@ -40,27 +40,27 @@ const RollShtory = () => {
                             </span>
                         </div>
                     </div>
-                    <div className="flex flex-col gap-7 w-3/5">
-                        <h3 className="text-body1">
+                    <div className="flex flex-col gap-7 w-full md:w-3/5">
+                        <h3 className="text-body3 sm:text-body2 md:text-body1">
                             Однотонные ролл-шторы - идеальный выбор для
                             поклонников минимализма.
                         </h3>
-                        <p className="text-body1">
+                        <p className="text-body3 sm:text-body2 md:text-body1">
                             Их легко устанавливать на створки окон, обеспечивая
                             отличную защиту от солнца, при этом оставаясь
                             незаметными. Эти стильные шторы могут быть
                             установлены дополнительно к тканевым шторам.
                         </p>
-                        <p className="text-body1">
+                        <p className="text-body3 sm:text-body2 md:text-body1">
                             Закажите свои шторы прямо сейчас!
                         </p>
                         <a
-                            className="bg-primary-foreground max-w-[268px] mt-auto py-3 px-16 text-secondary text-h4 rounded hover:bg-primary duration-300"
+                            className="bg-primary-foreground max-w-[148px] md:max-w-[268px] mt-auto py-2 md:py-3 px-8 md:px-16 text-secondary text-body3 sm:text-body2 md:text-body1 lg:text-h4 rounded hover:bg-primary duration-300"
                             href="https://wa.me/996775982180?text=Здравствуйте%2C+у+меня+есть+вопрос"
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            Заказать
+                            Связаться
                         </a>
                     </div>
                 </div>

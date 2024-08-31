@@ -3,23 +3,23 @@ import React from 'react'
 const Footer = () => {
     return (
         <footer className="bg-primary py-20 flex text-secondary">
-            <div className="container flex justify-between flex-wrap">
+            <div className="container flex flex-col md:flex-row justify-between items-center gap-6 flex-wrap">
                 <div>
                     <img src="/images/icons/main-logo3.svg" alt="Light logo" />
                 </div>
                 <div>
                     <ul className="space-y-6">
-                        <li className="text-body1">Категории продуктов</li>
-                        <li className="text-body1">Причины выбрать нас</li>
-                        <li className="text-body1">Популярные товары</li>
+                        <li className="text-body3 md:text-body2 lg:text-body1">Категории продуктов</li>
+                        <li className="text-body3 md:text-body2 lg:text-body1">Причины выбрать нас</li>
+                        <li className="text-body3 md:text-body2 lg:text-body1">Популярные товары</li>
                     </ul>
                 </div>
                 <div>
                     <ul className="space-y-6">
-                        <li className="text-body1">День - ночь</li>
-                        <li className="text-body1">Рулонные</li>
-                        <li className="text-body1">Вертикальные</li>
-                        <li className="text-body1">C принтами</li>
+                        <li className="text-body3 md:text-body2 lg:text-body1">День - ночь</li>
+                        <li className="text-body3 md:text-body2 lg:text-body1">Рулонные</li>
+                        <li className="text-body3 md:text-body2 lg:text-body1">Вертикальные</li>
+                        <li className="text-body3 md:text-body2 lg:text-body1">C принтами</li>
                     </ul>
                 </div>
                 <div>
@@ -35,7 +35,7 @@ const Footer = () => {
                                     src="/images/icons/light-phone.svg"
                                     alt="Phone icon"
                                 />
-                                <span className="text-body2">
+                                <span className="text-body3 md:text-body2 lg:text-body1">
                                     +996775982180
                                 </span>
                             </a>
@@ -51,7 +51,7 @@ const Footer = () => {
                                     src="/images/icons/WhatsApp.svg"
                                     alt="WhatsApp icon"
                                 />
-                                <span className="text-body2">
+                                <span className="text-body3 md:text-body2 lg:text-body1">
                                     +996775982180
                                 </span>
                             </a>
@@ -67,7 +67,7 @@ const Footer = () => {
                                     src="/images/icons/instagram.svg"
                                     alt="Instagram icon"
                                 />
-                                <span className="text-body2">
+                                <span className="text-body3 md:text-body2 lg:text-body1">
                                     jaluzi_home_bishkek
                                 </span>
                             </a>
