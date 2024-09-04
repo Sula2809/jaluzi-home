@@ -2,7 +2,7 @@ import React from 'react'
 
 const Vertical = () => {
   return (
-      <section className="container p-0">
+      <section className="container p-0" id={'vertical'}>
           <div className="relative max-w-[1475px] min-h-[340px]">
               <img src="/images/office2.png" alt="Офис" className="size-full object-fill min-h-[340px]" />
               <img

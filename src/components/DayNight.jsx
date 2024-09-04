@@ -22,7 +22,7 @@ const DayNight = () => {
         setIsModalOpen(false)
     }
     return (
-        <section className="container p-0">
+        <section className="container p-0" id={'day&night'}>
             <div className="bg-white max-w-[1475px] rounded p-3 sm:p-6 md:p-9 lg:p-12 space-y-5 md:space-y-12">
                 <h1 className="lg:text-h3 md:text-h4 sm:text-body1 text-body2 text-center uppercase">
                     ДЕНЬ - НОЧЬ
@@ -46,10 +46,10 @@ const DayNight = () => {
                     <div className="flex flex-col gap-7 w-full md:w-3/5">
                         <h3 className="text-body3 sm:text-body2 md:text-body1">
                             Идеальное сочетание стиля и <br />
-                            функциональности: Шторы
+                            функциональности: Шторы{' '}
                             <strong className="text-primary-foreground">
                                 ДЕНЬ-НОЧЬ
-                            </strong>
+                            </strong>{' '}
                             для вашего уюта!
                         </h3>
                         <p className="text-body3 sm:text-body2 md:text-body1">

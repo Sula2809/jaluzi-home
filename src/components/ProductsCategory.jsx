@@ -17,7 +17,7 @@ const ProductsCategory = () => {
     }
 
     return (
-        <section className="container relative p-0">
+        <section className="container relative p-0" id={'productsCategory'}>
             <div className="bg-white pb-8 sm:pb-10 md:pb-14 lg:pb-16 pt-4 sm:pt-6 md:pt-8 lg:pt-10 px-8 sm:px-14 md:px-20 lg:px-24 space-y-5 sm:space-y-7 md:space-y-9 lg:space-y-11 max-w-[1474px] mt-0 md:-mt-40 rounded z-50">
                 <h1 className="text-body2 md:text-h4 lg:text-h3 flex justify-center">
                     Категории продуктов

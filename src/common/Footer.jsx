@@ -3,23 +3,72 @@ import React from 'react'
 const Footer = () => {
     return (
         <footer className="bg-primary py-20 flex text-secondary">
-            <div className="container flex flex-col md:flex-row justify-between items-center gap-6 flex-wrap">
+            <div className="container flex flex-col md:flex-row justify-between items-start gap-6 flex-wrap">
                 <div>
-                    <img src="/images/icons/main-logo3.svg" alt="Light logo" />
+                    <img className='max-w-[150px]' src="/images/icons/main-logo3.svg" alt="Light logo" />
                 </div>
                 <div>
                     <ul className="space-y-6">
-                        <li className="text-body3 md:text-body2 lg:text-body1">Категории продуктов</li>
-                        <li className="text-body3 md:text-body2 lg:text-body1">Причины выбрать нас</li>
-                        <li className="text-body3 md:text-body2 lg:text-body1">Популярные товары</li>
+                        <li className="text-body3 md:text-body2 lg:text-body1">
+                            <a
+                                href="#productsCategory"
+                                className="hover:underline duration-300"
+                            >
+                                Категории продуктов
+                            </a>
+                        </li>
+                        <li className="text-body3 md:text-body2 lg:text-body1">
+                            <a
+                                href="#chooseUs"
+                                className="hover:underline duration-300"
+                            >
+                                Причины выбрать нас
+                            </a>
+                        </li>
+                        <li className="text-body3 md:text-body2 lg:text-body1">
+                            <a
+                                href="#popular"
+                                className="hover:underline duration-300"
+                            >
+                                Популярные товары
+                            </a>
+                        </li>
                     </ul>
                 </div>
                 <div>
                     <ul className="space-y-6">
-                        <li className="text-body3 md:text-body2 lg:text-body1">День - ночь</li>
-                        <li className="text-body3 md:text-body2 lg:text-body1">Рулонные</li>
-                        <li className="text-body3 md:text-body2 lg:text-body1">Вертикальные</li>
-                        <li className="text-body3 md:text-body2 lg:text-body1">C принтами</li>
+                        <li className="text-body3 md:text-body2 lg:text-body1">
+                            <a
+                                href="#day&night"
+                                className="hover:underline duration-300"
+                            >
+                                День - ночь
+                            </a>
+                        </li>
+                        <li className="text-body3 md:text-body2 lg:text-body1">
+                            <a
+                                href="#roll"
+                                className="hover:underline duration-300"
+                            >
+                                Рулонные
+                            </a>
+                        </li>
+                        <li className="text-body3 md:text-body2 lg:text-body1">
+                            <a
+                                href="#vertical"
+                                className="hover:underline duration-300"
+                            >
+                                Вертикальные
+                            </a>
+                        </li>
+                        <li className="text-body3 md:text-body2 lg:text-body1">
+                            <a
+                                href="#print"
+                                className="hover:underline duration-300"
+                            >
+                                C принтами
+                            </a>
+                        </li>
                     </ul>
                 </div>
                 <div>
