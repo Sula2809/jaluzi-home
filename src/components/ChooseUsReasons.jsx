@@ -26,7 +26,7 @@ const data = [
 const ChooseUsReasons = () => {
   return (
       <section className="container p-0" id={'chooseUs'}>
-          <div className="bg-white max-w-[1475px] rounded p-3 sm:p-6 md:p-9 lg:p-12 space-y-12 mt-4 md:mt-8 lg:mt-16">
+          <div className="bg-white max-w-[1475px] mx-auto rounded p-3 sm:p-6 md:p-9 lg:p-12 space-y-12 mt-4 md:mt-8 lg:mt-16">
               <h1 className="text-body1 md:text-h4 lg:text-h3 text-center">Причины выбрать нас</h1>
               <div className="flex justify-between gap-16">
                   <div className="w-2/5 relative hidden lg:block">

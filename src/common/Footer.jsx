@@ -5,7 +5,7 @@ const Footer = () => {
         <footer className="bg-primary py-20 flex text-secondary">
             <div className="container flex flex-col md:flex-row justify-between items-center gap-6 flex-wrap">
                 <div>
-                    <img className='max-w-[150px]' src="/images/icons/main-logo3.svg" alt="Light logo" />
+                    <img className='max-w-[62px] sm:max-w-[80px] md:max-w-[120px] lg:max-w-[150px]' src="/images/icons/main-logo3.svg" alt="Light logo" />
                 </div>
                 <div>
                     <ul className="space-y-6">

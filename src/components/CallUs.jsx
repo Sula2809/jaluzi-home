@@ -9,8 +9,8 @@ const CallUs = () => {
                 className="size-full object-cover min-h-[488px]"
             />
             <div className="absolute size-full top-0 left-0 bg-secondary opacity-50"></div>
-            <div className="absolute top-[20%] left-[6%] container space-y-2 lg:space-y-10">
-                <p className="text-body1 md:text-h2 font-extrabold max-w-[342px] sm:max-w-[500px] md:max-w-[800px] lg:max-w-[1140px] p-2.5">
+            <div className="absolute top-[20%] left-[6%] space-y-2 lg:space-y-10">
+                <p className="text-body1 md:text-h2 font-extrabold max-w-[342px] sm:max-w-[500px] md:max-w-[800px] lg:max-w-[1140px] ">
                     БОЛЕЕ 15 ЛЕТ НА РЫНКЕ КЫРГЫЗСТАНА, МЫ ПРОФЕССИОНАЛЬНО
                     ОКАЗЫВАЕМ УСЛУГИ ПО ИЗГОТОВЛЕНИЮ И УСТАНОВКЕ ЛЮБОЙ СЛОЖНОСТИ
                     ЖАЛЮЗИ И РОЛЛ-ШТОР.

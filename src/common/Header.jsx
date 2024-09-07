@@ -7,7 +7,7 @@ export const Header = () => {
                         <img
                             src="/images/icons/location-pin.svg"
                             alt="Location pin"
-                            className="size-5 sm:size-6 md:size-7 lg:size-8"
+                            className="size-6 md:size-7 lg:size-8"
                         />
                         <span className="text-primary-foreground text-body4 sm:text-body3 md:text-body2">
                             Бишкек, Кыргызстан
@@ -28,7 +28,7 @@ export const Header = () => {
                         <img
                             src="/images/icons/WhatsApp.svg"
                             alt="WhatsApp icon"
-                            className="size-5 sm:size-6 md:size-7 lg:size-8"
+                            className="size-6 md:size-7 lg:size-8"
                         />
                     </a>
                     <a
@@ -38,7 +38,7 @@ export const Header = () => {
                         <img
                             src="/images/icons/phone.svg"
                             alt="Phone icon"
-                            className="size-5 sm:size-6 md:size-7 lg:size-8"
+                            className="size-6 md:size-7 lg:size-8"
                         />
                         <span className="text-primary-foreground text-body4 sm:text-body3 md:text-body2">
                             +996775982180

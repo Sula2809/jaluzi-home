@@ -20,7 +20,7 @@ const RollShtory = () => {
         }
     return (
         <section className="container p-0" id={'roll'}>
-            <div className="bg-white max-w-[1475px] rounded p-3 sm:p-6 md:p-9 lg:p-12 space-y-5 md:space-y-12">
+            <div className="bg-white max-w-[1475px] mx-auto rounded p-3 sm:p-6 md:p-9 lg:p-12 space-y-5 md:space-y-12">
                 <h1 className="lg:text-h3 md:text-h4 sm:text-body1 text-body2 text-center uppercase">
                     РОЛЛ-ШТОРЫ
                 </h1>

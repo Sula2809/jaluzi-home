@@ -15,7 +15,7 @@ const PopularProducts = () => {
 
     return (
         <section className="container p-0" id={'popular'}>
-            <div className="bg-white max-w-[1475px] rounded p-3 sm:p-6 md:p-9 lg:p-12 space-y-5 md:space-y-12">
+            <div className="bg-white max-w-[1475px] mx-auto rounded p-3 sm:p-6 md:p-9 lg:p-12 space-y-5 md:space-y-12">
                 <h1 className="lg:text-h3 md:text-h4 sm:text-body1 text-body2 text-center uppercase">
                     Наши самые популярные товары
                 </h1>
@@ -49,8 +49,11 @@ const PopularProducts = () => {
                             установлены дополнительно к тканевым шторам.
                         </p>
                         <p className="text-body3 sm:text-body2 md:text-body1">
-                            Закажите свои шторы прямо сейчас! <br/> Наш{' '}
-                            <strong className='text-primary-foreground'> дизайнер</strong>{' '}
+                            Закажите свои шторы прямо сейчас! <br /> Наш{' '}
+                            <strong className="text-primary-foreground">
+                                {' '}
+                                дизайнер
+                            </strong>{' '}
                             окажет вам профессиональную консультацию.
                         </p>
                         <a

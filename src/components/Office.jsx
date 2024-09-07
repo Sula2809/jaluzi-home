@@ -3,7 +3,7 @@ import React from 'react'
 const Office = () => {
     return (
         <section className="container p-0">
-            <div className="relative max-w-[1475px]">
+            <div className="relative max-w-[1475px] mx-auto">
                 <img
                     src="/images/office.png"
                     alt="Офис"

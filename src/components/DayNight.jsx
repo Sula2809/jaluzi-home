@@ -23,7 +23,7 @@ const DayNight = () => {
     }
     return (
         <section className="container p-0" id={'day&night'}>
-            <div className="bg-white max-w-[1475px] rounded p-3 sm:p-6 md:p-9 lg:p-12 space-y-5 md:space-y-12">
+            <div className="bg-white max-w-[1475px] mx-auto rounded p-3 sm:p-6 md:p-9 lg:p-12 space-y-5 md:space-y-12">
                 <h1 className="lg:text-h3 md:text-h4 sm:text-body1 text-body2 text-center uppercase">
                     ДЕНЬ - НОЧЬ
                 </h1>
@@ -61,9 +61,11 @@ const DayNight = () => {
                             уюта и практичности.
                         </p>
                         <p className="text-body3 sm:text-body2 md:text-body1">
-                            Закажите шторы ДЕНЬ-НОЧЬ. <br/> Наш{' '}
-                            <strong className='text-primary-foreground'>дизайнер</strong> окажет вам
-                            профессиональную консультацию.
+                            Закажите шторы ДЕНЬ-НОЧЬ. <br /> Наш{' '}
+                            <strong className="text-primary-foreground">
+                                дизайнер
+                            </strong>{' '}
+                            окажет вам профессиональную консультацию.
                         </p>
                         <a
                             className="bg-primary-foreground max-w-[148px] md:max-w-[268px] mt-auto py-2 md:py-3 px-8 md:px-16 text-secondary text-body3 sm:text-body2 md:text-body1 lg:text-h4 rounded hover:bg-primary duration-300"
