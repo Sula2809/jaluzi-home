@@ -3,7 +3,7 @@ import React from 'react'
 const Footer = () => {
     return (
         <footer className="bg-primary py-20 flex text-secondary">
-            <div className="container flex flex-col md:flex-row justify-between items-start gap-6 flex-wrap">
+            <div className="container flex flex-col md:flex-row justify-between items-center gap-6 flex-wrap">
                 <div>
                     <img className='max-w-[150px]' src="/images/icons/main-logo3.svg" alt="Light logo" />
                 </div>

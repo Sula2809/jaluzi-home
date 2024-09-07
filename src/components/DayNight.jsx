@@ -61,7 +61,9 @@ const DayNight = () => {
                             уюта и практичности.
                         </p>
                         <p className="text-body3 sm:text-body2 md:text-body1">
-                            Закажите шторы ДЕНЬ-НОЧЬ.
+                            Закажите шторы ДЕНЬ-НОЧЬ. <br/> Наш{' '}
+                            <strong className='text-primary-foreground'>дизайнер</strong> окажет вам
+                            профессиональную консультацию.
                         </p>
                         <a
                             className="bg-primary-foreground max-w-[148px] md:max-w-[268px] mt-auto py-2 md:py-3 px-8 md:px-16 text-secondary text-body3 sm:text-body2 md:text-body1 lg:text-h4 rounded hover:bg-primary duration-300"

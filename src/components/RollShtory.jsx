@@ -42,17 +42,21 @@ const RollShtory = () => {
                     </div>
                     <div className="flex flex-col gap-7 w-full md:w-3/5">
                         <h3 className="text-body3 sm:text-body2 md:text-body1">
-                            Однотонные ролл-шторы - идеальный выбор для
-                            поклонников минимализма.
+                            Однотонные ролл-шторы - <br />
+                            идеальный выбор для поклонников минимализма.
                         </h3>
                         <p className="text-body3 sm:text-body2 md:text-body1">
                             Их легко устанавливать на створки окон, обеспечивая
-                            отличную защиту от солнца, при этом оставаясь
-                            незаметными. Эти стильные шторы могут быть
-                            установлены дополнительно к тканевым шторам.
+                            отличную защиту от солнца, при этом незаметные. Эти
+                            стильные шторы могут быть установлены дополнительно
+                            к тканевым шторам.
                         </p>
                         <p className="text-body3 sm:text-body2 md:text-body1">
-                            Закажите свои шторы прямо сейчас!
+                            Закажите свои шторы прямо сейчас! <br /> Наш{' '}
+                            <strong className="text-primary-foreground">
+                                дизайнер
+                            </strong>{' '}
+                            окажет вам профессиональную консультацию.
                         </p>
                         <a
                             className="bg-primary-foreground max-w-[148px] md:max-w-[268px] mt-auto py-2 md:py-3 px-8 md:px-16 text-secondary text-body3 sm:text-body2 md:text-body1 lg:text-h4 rounded hover:bg-primary duration-300"

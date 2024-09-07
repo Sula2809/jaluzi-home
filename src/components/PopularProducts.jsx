@@ -49,7 +49,7 @@ const PopularProducts = () => {
                             установлены дополнительно к тканевым шторам.
                         </p>
                         <p className="text-body3 sm:text-body2 md:text-body1">
-                            Закажите свои шторы прямо сейчас! Наш{' '}
+                            Закажите свои шторы прямо сейчас! <br/> Наш{' '}
                             <strong className='text-primary-foreground'> дизайнер</strong>{' '}
                             окажет вам профессиональную консультацию.
                         </p>

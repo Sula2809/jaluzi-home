@@ -41,7 +41,7 @@ const ChooseUsReasons = () => {
                           <div className="md:max-w-[326px] w-full gap-4 mb-4 lg:space-y-5 flex md:flex-col" key={index}>
                               <div className="w-1/5">
                                   <img
-                                        className='size-8 object-cover'
+                                        className='size-8 md:size-12 object-cover'
                                       src={item.img}
                                       alt={item.alt}
                                   />
