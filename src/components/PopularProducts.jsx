@@ -15,7 +15,7 @@ const PopularProducts = () => {
 
     return (
         <section className="container p-0" id={'popular'}>
-            <div className="bg-white max-w-[1475px] mx-auto rounded p-3 sm:p-6 md:p-9 lg:p-12 space-y-5 md:space-y-12">
+            <div className="bg-white max-w-[1475px] mx-auto rounded-2xl p-3 sm:p-6 md:p-9 lg:p-12 space-y-5 md:space-y-12 shadow-[#444] shadow-md">
                 <h1 className="lg:text-h3 md:text-h4 sm:text-body1 text-body2 text-center uppercase">
                     Наши самые популярные товары
                 </h1>
@@ -24,7 +24,7 @@ const PopularProducts = () => {
                         <img
                             src="/popular/popular1.png"
                             alt="Популярный товар"
-                            className="size-full"
+                            className="size-full object-cover rounded-xl"
                         />
                         <div
                             className="absolute top-0 left-0 bg-secondary opacity-0 hover:opacity-50 duration-300 cursor-pointer size-full flex justify-center items-center"
@@ -57,7 +57,7 @@ const PopularProducts = () => {
                             окажет вам профессиональную консультацию.
                         </p>
                         <a
-                            className="bg-primary-foreground text-center max-w-[148px] md:max-w-[268px] mt-auto py-2 md:py-3 px-8 md:px-16 text-secondary text-body3 sm:text-body2 md:text-body1 lg:text-h4 rounded hover:bg-primary duration-300"
+                            className="bg-primary-foreground text-center max-w-[148px] md:max-w-[268px] mt-auto py-2 md:py-3 text-secondary text-body3 sm:text-body2 md:text-body1 lg:text-h4 rounded-2xl hover:bg-primary duration-300"
                             href="https://wa.me/996775982180?text=Здравствуйте%2C+у+меня+есть+вопрос"
                             target="_blank"
                             rel="noopener noreferrer"

@@ -7,9 +7,9 @@ const Office = () => {
                 <img
                     src="/images/office.png"
                     alt="Офис"
-                    className="size-full object-cover min-h-[320px]"
+                    className="size-full object-cover min-h-[320px] rounded-2xl shadow-[#444] shadow-md"
                 />
-                <p className="text-body3 md:text-body2 lg:text-body1  font-extrabold absolute top-[50%] left-[50%] -translate-y-[50%] -translate-x-[50%] mx-auto max-w-[384px] md:max-w-[1298px] w-full bg-secondary p-1 rounded">
+                <p className="text-body3 md:text-body2 lg:text-body1  font-extrabold absolute top-[50%] left-[50%] -translate-y-[50%] -translate-x-[50%] mx-auto max-w-[384px] md:max-w-[1298px] w-full bg-secondary p-1 rounded-xl">
                     Офис - это место, где все должно быть продумано и оформлено
                     в сдержанном стиле. Отличным и практичным решением станут
                     жалюзи на большие пластиковые окна в офис.

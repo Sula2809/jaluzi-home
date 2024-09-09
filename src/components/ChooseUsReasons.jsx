@@ -26,22 +26,27 @@ const data = [
 const ChooseUsReasons = () => {
   return (
       <section className="container p-0" id={'chooseUs'}>
-          <div className="bg-white max-w-[1475px] mx-auto rounded p-3 sm:p-6 md:p-9 lg:p-12 space-y-12 mt-4 md:mt-8 lg:mt-16">
-              <h1 className="text-body1 md:text-h4 lg:text-h3 text-center">Причины выбрать нас</h1>
+          <div className="bg-white max-w-[1475px] mx-auto rounded-2xl p-3 sm:p-6 md:p-9 lg:p-12 space-y-12 mt-4 md:mt-8 lg:mt-16 shadow-[#444] shadow-md">
+              <h1 className="text-body1 md:text-h4 lg:text-h3 text-center">
+                  Причины выбрать нас
+              </h1>
               <div className="flex justify-between gap-16">
                   <div className="w-2/5 relative hidden lg:block">
                       <img
                           src="/images/select-us.png"
                           alt="Причины выбрать нас"
-                          className="size-full"
+                          className="size-full object-cover rounded-xl"
                       />
                   </div>
                   <div className="grid grid-cols-1 md:grid-cols-2 justify-between gap-x-40 md:mt-10">
                       {data.map((item, index) => (
-                          <div className="md:max-w-[326px] w-full gap-4 mb-4 lg:space-y-5 flex md:flex-col" key={index}>
+                          <div
+                              className="md:max-w-[326px] w-full gap-4 mb-4 lg:space-y-5 flex md:flex-col"
+                              key={index}
+                          >
                               <div className="w-1/5">
                                   <img
-                                        className='size-8 md:size-12 object-cover'
+                                      className="size-8 md:size-12 object-cover"
                                       src={item.img}
                                       alt={item.alt}
                                   />
