@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://jaluzi-home.netlify.app/sitemap.xml
